@@ -1,10 +1,7 @@
 import mongoose from "mongoose";
 
 const studentSchema = new mongoose.Schema({
-    // id: {
-    //     type: 'string',
-    //     require: true,
-    // },
+   
     name: {
         type: 'string',
         require: true,
@@ -33,10 +30,7 @@ const studentSchema = new mongoose.Schema({
 });
 
 const mentorSchema = new mongoose.Schema({
-    // id: {
-    //     type: 'string',
-    //     require: true,
-    // },
+    
     name: {
         type: 'string',
         require: true,
