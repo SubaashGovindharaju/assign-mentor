@@ -32,7 +32,7 @@ API Endpoints:
 
 Create a Mentor:
 
-- URL: /mentors
+- URL: /api/mentors
 - Method: POST
 - Description: Create a new mentor.
 - Request Body:
@@ -47,7 +47,7 @@ Create a Mentor:
 
 Create a Student:
 
-- URL: /students
+- URL: /api//students
 - Method: POST
 - Description: Create a new student.
 - Request Body:
@@ -62,7 +62,7 @@ Create a Student:
 
 Assign Student to a Mentor:
 
-- URL: /assign-student
+- URL: /api//assign-student
 - Method: PUT
 - Description: Assign a student to a mentor.
 - Request Body:
@@ -77,7 +77,7 @@ Assign Student to a Mentor:
 
 Show Unassigned Students:
 
-- URL: /unassigned-students
+- URL: /api//unassigned-students
 - Method: GET
 - Description: Get a list of unassigned students.
 - Response:
@@ -87,7 +87,7 @@ Show Unassigned Students:
 
 Assign or Change Mentor for a Student:
 
-- URL: /change-mentor
+- URL: /api//change-mentor
 - Method: PUT
 - Description: Change the mentor for a specific student.
 - Request Body:
@@ -103,7 +103,7 @@ Assign or Change Mentor for a Student:
 
 Show All Students for a Mentor:
 
-- URL: /students-for-mentor/:mentorId
+- URL: /api//students-for-mentor/:mentorId
 - Method: GET
 - Description: Get a list of students assigned to a specific mentor.
 - Response:
@@ -111,7 +111,7 @@ Show All Students for a Mentor:
 
 Previously Assigned Student:
 
-- URL: /previous-student/:studentId
+- URL: /api//previous-student/:studentId
 - Method: GET
 - Description: Get the previously assigned mentor for a student.
 - Response:
@@ -126,7 +126,7 @@ If any of the API endpoints encounter an error, they will respond with a status 
 
 Author:
 
-[Your Name]
+[subaash G]
 
 License:
 
