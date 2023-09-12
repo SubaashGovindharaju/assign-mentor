@@ -1,14 +1,10 @@
-
-
-
 import express from 'express';
 import { mentorDatabase as mentorDatabaseModel, studentDatabase as studentDatabaseModel } from '../database/modele.js';
 import { v4 } from 'uuid';
 const studentMentor = express.Router();
 
 studentMentor.use(express.json());
-const mentors = [];
-const students = [];
+
 
 
 // Create a Mentor
@@ -42,7 +38,7 @@ studentMentor.put('/assign-student', async(req, res) => {
         // const { mentorId } = req.body;
         await mentorDatabaseModel.updateOne({mentorId:mentorId}, { $push: {students:[{studentId: studentId}] } });
         await studentDatabaseModel.updateOne({studentId : studentId }, { $set: req.body  });
-        res.json({ msg: 'Student changed to mentor successfully' });
+        res.json({ msg: 'Student assign to mentor successfully' });
     } catch (error) {
         res.status(500).json({ error: 'Error assigning student to mentor' });
     }
